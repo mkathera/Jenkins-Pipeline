@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                echo "Build phase.."
+                ant '**/build.xml'
             }
         }
         stage('Test'){
